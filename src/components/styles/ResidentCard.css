@@ -1,0 +1,68 @@
+.resident {
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #072226;
+}
+
+.resident:hover {
+        animation:shadow-drop-center 0.4s linear both} @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(255,255,255,.55)}
+}
+
+.resident__img {
+    position: relative;
+}
+
+.resident__status {
+    position: absolute;
+    background-color: #072226;
+    top: 10%;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.resident__circle {
+    background-color: grey;
+    color: grey;
+    width: 17px;
+    aspect-ratio: 1px;
+    border-radius: 50%;
+}
+
+.Alive {
+    background-color: chartreuse;
+    color: chartreuse;;
+}
+
+.Dead {
+    background-color: red;
+    color: red;
+}
+ 
+.resident__line {
+    border: 1px solid #7777;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.resident__list {
+   /*  font-size: 15px; */
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+.resident__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.resident__item span:first-child {
+    padding-left: 20px;
+    color: grey;
+}
